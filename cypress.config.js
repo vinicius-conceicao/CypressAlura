@@ -1,13 +1,15 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
+  projectId: 'mxc2jw',
   reporter: 'mochawesome',
   reporterOptions: {
     "reportDir": "cypress/report/mochawesome-report",
     "overwrite": true,
     "html": true,
     "json": false,
-    "timestamp": "mmddyyyy_HHMMss"
+    "charts": true,
+    "reportTitle": "Alura: Automação e2e com Cypress"
   },
   e2e: {
     // We've imported your old cypress plugins here.
